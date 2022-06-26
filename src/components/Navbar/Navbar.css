@@ -1,0 +1,96 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  height: 80px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.nav-wrapper .bar-icon {
+  display: none;
+}
+
+.logo,
+.nav-menu,
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-wrapper .logo h1 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.nav-menu {
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-wrapper .link-items {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.nav-wrapper .cart-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-wrapper .cart-btn span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  top: -5px;
+  right: -5px;
+  border-radius: 50%;
+  background: yellow;
+  color: #000;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  .logo h1 {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  .bar-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+}

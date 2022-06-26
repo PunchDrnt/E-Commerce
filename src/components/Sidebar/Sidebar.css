@@ -1,0 +1,58 @@
+.sidebar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  transition: 0.3s ease-in-out;
+  color: #fff;
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  left: -100%;
+}
+
+.sidebar.active {
+  opacity: 1;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.side-left {
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  width: 80%;
+  height: 100%;
+}
+
+.close-icon {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+.side-left ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.side-left ul li {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.side-right {
+  display: flex;
+  width: 20%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
