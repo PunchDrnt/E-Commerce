@@ -5,6 +5,10 @@
   font-family: 'Varela Round', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* NotFound */
 
 .not-found {

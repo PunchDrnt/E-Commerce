@@ -85,7 +85,7 @@ nav {
     margin: 1rem;
   }
 
-  .bar-icon {
+  .nav-wrapper .bar-icon {
     display: flex;
     justify-content: center;
     align-items: center;
