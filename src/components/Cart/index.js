@@ -25,19 +25,23 @@ const Cart = () => {
           <h3 className="quantity">Quantity</h3>
           <h3 className="total">Total</h3>
         </div>
-        {items.cartItems.map((items) => (
-          <CartItem key={items.id} {...items} />
-        ))}
+        <div className="cart-all-items">
+          {items.cartItems.map((items) => (
+            <CartItem key={items.id} {...items} />
+          ))}
+        </div>
         <div className="cart-summary">
           <button className="clear-btn" onClick={() => handleClearCart(items)}>
             Clear Cart
           </button>
           <div className="cart-checkout">
-            <div className="cart-subtotal">
-              <span>Subtotal</span>
-              <span>{items.cartTotalAmount}.-</span>
+            <div>
+              <div className="cart-subtotal">
+                <span>Subtotal</span>
+                <span>{items.cartTotalAmount}.-</span>
+              </div>
+              <p>Taxes and shipping not includes</p>
             </div>
-            <p>Taxes and shipping not includes</p>
             <button className="checkout-btn">Check out</button>
             <Link className="link-item" to="/">
               <p>Back to shopping</p>
